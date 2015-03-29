@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test Loading data json file</title>
+    <script src='cardapio.js'></script>
+    <script src="xhr.js"></script>
+</head>
+<body>
+    <script>
+        //var pizza = new Cardapio();
+        //pizza.lerObjeto(data[0]);
+        function showMessage (sMsg) {
+            console.log(typeof(this.responseText));
+            //var str = this.responseText;
+            //var str = '{"url": "pizzaria-do-gilberto","endereco": "rua de teste 123, Bairro Tereza Cristina, São Joaquim de Bicas MG", "phone": "0000-0000", "nome": "pizzaria do Gilberto" }';
+            //console.log(sMsg + str);
+            //var obj = JSON.parse(str);
+            //console.log(obj);
+        }
+
+        loadFile("data.json", showMessage, "New message!\n\n");    </script>
+</body>
+</html>
